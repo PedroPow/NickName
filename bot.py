@@ -9,13 +9,16 @@ import pytz
 from discord import PartialEmoji
 import discord
 from discord.ext import commands
+
+# ───────── INTENTS ─────────
+
 intents = discord.Intents.default()
 intents.message_content = True  # necessário para comandos
 intents.members = True          # necessário se mexer com nick, cargos, membros
 
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 # ───────── CONFIG ─────────
-bot = commands.Bot(command_prefix="!", intents=intents)
 TOKEN = os.getenv("TOKEN")  # coloque TOKEN no .env
 
 GUILD_ID = 1380696158174974062
@@ -28,11 +31,6 @@ CARGO_STAFF_ID  = 1444744188829761737
 
 CANAL_LOG_ID = 1453441190719389838
 COOLDOWN_FILE = "cooldown_nick.json"
-
-# ───────── BOT ─────────
-intents = discord.Intents.default()
-intents.members = True
-bot = commands.Bot(command_prefix="!", intents=intents)
 
 # ───────── COOLDOWN ─────────
 def carregar_cooldown():
