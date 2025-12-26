@@ -242,7 +242,7 @@ async def on_ready():
         color=discord.Color.dark_green(),
     )
 
-    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1444735189765849320/1453943845560782891/Logo_Tropa_do_Trevo_3000_x_3000_px_1.gif?ex=694f4a39&is=694df8b9&hm=fce8dc5f7a3cfd65a50439deb3460224682a6fa3cf792fd4b5c886221f0b8b39&")
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1444735189765849320/1453944484944416928/logo.gif?ex=694f4ad2&is=694df952&hm=516443441d635d2dc56ca959734ca9d4be860406db88ade594d065ff37339b62&")
 
 
     view = AlterarNickView(guild)
